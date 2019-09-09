@@ -1,0 +1,33 @@
+.c-header-menu{
+  &__authenticate {
+    &-logged-in-menu {
+      padding-top: 10px;
+      display: flex;
+      &-title {
+        margin-right: 10px;
+        padding-top: 10px;
+      }
+      a {
+        margin-left: 10px;
+      }
+    }
+
+    &-form {
+      display: flex;
+      margin-top: 10px;
+      &-field {
+        display: flex;
+        padding: 5px;
+        label {
+          margin-right: 7px;
+          font-weight: bold;
+          font-size: 13px;
+        }
+        input {
+          border-radius: 5px;
+          padding: 5px
+        }
+      }
+    }
+  }
+}

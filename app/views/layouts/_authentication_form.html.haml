@@ -1,0 +1,8 @@
+= form_tag :authentication, class: "c-header-menu__authenticate-form" do
+  .field.c-header-menu__authenticate-form-field
+    %label Username:
+    = text_field_tag :username, nil, placeholder: 'Username', required: true
+  .field.c-header-menu__authenticate-form-field
+    %label Password:
+    = password_field_tag :password, nil, placeholder: 'Password', required: true
+  = button_tag "Login/Register", class: 'button is-primary'

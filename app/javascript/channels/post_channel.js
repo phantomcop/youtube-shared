@@ -1,4 +1,9 @@
 import consumer from "./consumer"
+import $ from 'jquery';
+
+const elements = {
+  postList: '#js-page__home-posts'
+}
 
 consumer.subscriptions.create("PostChannel", {
   connected() {
@@ -10,8 +15,10 @@ consumer.subscriptions.create("PostChannel", {
   },
 
   received(data) {
-    console.log('testing')
-    console.log(data)
-    // Called when there's incoming data on the websocket for this channel
+    if (data.status === 'success') {
+      $(elements.postList).prepend(data.post)
+    } else {
+      console.log(data.message)
+    }
   }
 });

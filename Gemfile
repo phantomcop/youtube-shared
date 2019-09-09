@@ -50,8 +50,10 @@ group :test do
   gem 'webdrivers'
 end
 
-gem 'simple_form'
+gem 'dotenv-rails', groups: [:development, :test]
 
+gem 'simple_form', '~> 4.1'
+gem 'yt', '~> 0.32.0'
 gem 'bcrypt', '~> 3.1.7'
 gem 'sidekiq', '~> 5.2', '>= 5.2.7'
 gem 'haml-rails', "~> 2.0"

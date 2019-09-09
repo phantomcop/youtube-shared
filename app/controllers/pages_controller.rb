@@ -1,6 +1,5 @@
 class PagesController < ApplicationController
   def home
-    @post = Post.new
-    @posts = Post.all
+    @home = PagesOperations::Home.new
   end
 end

@@ -1,0 +1,9 @@
+.c-posts__new
+  %h6.title.is-size-6.c-posts__new-title Share a youtube movie
+  = form_for @post, html: { class: 'c-posts__new-form' } do |f|
+    .field.c-posts__new-form-field
+      %label.label Youtube url
+      .control
+        = f.text_field :url, class: 'input c-posts__new-form-field-input'
+    .is-align-center
+      = f.button :submit, class: 'button c-posts__new-form-btn is-link'

@@ -77,6 +77,10 @@ GEM
     concurrent-ruby (1.1.5)
     connection_pool (2.2.2)
     crass (1.0.4)
+    dotenv (2.7.5)
+    dotenv-rails (2.7.5)
+      dotenv (= 2.7.5)
+      railties (>= 3.2, < 6.1)
     erubi (1.8.0)
     erubis (2.7.0)
     ffi (1.11.1)
@@ -227,6 +231,8 @@ GEM
     websocket-extensions (0.1.4)
     xpath (3.2.0)
       nokogiri (~> 1.8)
+    yt (0.32.4)
+      activesupport
     zeitwerk (2.1.9)
 
 PLATFORMS
@@ -237,6 +243,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
+  dotenv-rails
   haml-rails (~> 2.0)
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
@@ -247,7 +254,7 @@ DEPENDENCIES
   sass-rails (~> 5)
   selenium-webdriver
   sidekiq (~> 5.2, >= 5.2.7)
-  simple_form
+  simple_form (~> 4.1)
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
@@ -255,6 +262,7 @@ DEPENDENCIES
   web-console (>= 3.3.0)
   webdrivers
   webpacker (~> 4.0)
+  yt (~> 0.32.0)
 
 RUBY VERSION
    ruby 2.6.0p0

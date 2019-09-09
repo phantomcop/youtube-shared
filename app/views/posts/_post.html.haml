@@ -1,2 +1,12 @@
-.c-posts_content
-  = post.url
+.c-post__content.columns.is-mobile
+  .c-post__content-video.column
+    %iframe{src: post.embed_url, width: 500, height: 400, frameborder: 0}
+  .c-post__content-text-information.column.is-two-thirds
+    %h3.title.is-4= post.title
+    -# Todo: embed link
+    .c-post__content-text-description
+      %p Description:
+      = simple_format post.truncated_description
+    %p.is-size-6.has-text-weight-bold
+      Published at:
+      = post.parsed_published_at

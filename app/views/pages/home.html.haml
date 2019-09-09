@@ -1,7 +1,3 @@
 .container.c-pages__home
-  .c-page__home-post-form
-    = simple_form_for @post do |f|
-      = f.input :url
-      = f.button :submit
-  .c-page__home_posts
-    = render @posts
+  .c-pages__home-posts#js-page__home-posts
+    = render @home

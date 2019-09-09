@@ -1,0 +1,6 @@
+.c-header-menu__authenticate-logged-in-menu
+  %h5.title.is-size-6.c-header-menu__authenticate-logged-in-menu-title
+    Welcome
+    = current_user.username
+  = link_to "Share a movie", new_post_path, class: 'button'
+  = link_to "Logout", authentication_path(current_user), method: :delete, class: 'button'

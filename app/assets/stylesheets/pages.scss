@@ -1,3 +1,13 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.c-pages__home{
+  .c-post__content {
+    max-height: 400px;
+    &-video {
+      iframe {
+        min-height: 300px;
+      }
+    }
+    &-text-description {
+      margin-bottom: 10px;
+    }
+  }
+}
