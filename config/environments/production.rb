@@ -37,11 +37,12 @@ Rails.application.configure do
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :local
+  config.serve_static_assets = true
 
   # Mount Action Cable outside main process or domain.
   # config.action_cable.mount_path = nil
   # config.action_cable.url = 'wss://example.com/cable'
-  config.action_cable.url = 'wss://youtube-shared.herokuapp.com/cable'
+  config.action_cable.url = 'wss://aqueous-thicket-49913.herokuapp.com/cable'
   config.action_cable.allowed_request_origins = [ 'https://youtube-shared.herokuapp.com/']
 
   # config.action_cable.allowed_request_origins = [ 'http://example.com', /http:\/\/example.*/ ]
