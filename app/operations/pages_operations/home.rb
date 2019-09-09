@@ -1,13 +1,17 @@
 class PagesOperations::Home
-  attr_accessor :post, :authentication
+  attr_accessor :post, :authentication, :scope
 
-  def initialize
+  def initialize(params)
     @post = Post.new
     @authentication = Authentication.new
+    @scope = Post.includes(votes: :user)
+                .where(updated: true)
+                .order(created_at: :desc)
+                .page(params[:page])
   end
 
   def posts
-    @posts ||= Post.where(updated: true).map { |p| PostPresenter.new(p) }
+    @posts ||= @scope.map { |p| PostPresenter.new(p) }
   end
 
   def to_partial_path

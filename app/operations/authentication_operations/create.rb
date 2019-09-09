@@ -10,8 +10,8 @@ class AuthenticateOperations::Create
   def call
     begin
       sign_up_or_login
-    rescue => exception
-      @error = exception.message
+    rescue StandardError => e
+      @error = e.message
       false
     end
   end
@@ -32,4 +32,5 @@ class AuthenticateOperations::Create
     @user = User.new(params)
     @user.password_confirmation = params[:password]
     @user.save!
+  end
 end

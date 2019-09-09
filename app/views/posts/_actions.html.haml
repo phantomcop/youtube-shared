@@ -1,0 +1,11 @@
+.c-post__content-text-information-actions
+  - if post.voted_by?(current_user)
+    %i.icon.c-post__content-text-information-voted-status
+      %img{src: asset_path("#{post.voted_type(current_user)}.svg")}
+  - else
+    = link_to post_votes_path(post, vote_type: 'up'), method: :post do
+      %i.icon
+        %img{src: asset_path("up.svg")}
+    = link_to post_votes_path(post, vote_type: 'down'), method: :post do
+      %i.icon
+        %img{src: asset_path("down.svg")}

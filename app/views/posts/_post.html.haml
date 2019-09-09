@@ -3,6 +3,8 @@
     %iframe{src: post.embed_url, width: 500, height: 400, frameborder: 0}
   .c-post__content-text-information.column.is-two-thirds
     %h3.title.is-4= post.title
+    - if logged_in?
+      = render 'posts/actions', post: post
     -# Todo: embed link
     .c-post__content-text-description
       %p Description:

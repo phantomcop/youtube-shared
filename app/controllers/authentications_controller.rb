@@ -11,12 +11,12 @@ class AuthenticationsController < ApplicationController
       flash[:error] = authentication.errors.full_messages.to_sentence
     end
 
-    redirect_to root_path
+    redirect_back_or(root_path)
   end
 
   def destroy
     log_out
-    redirect_to root_path, notice: 'You are already logged out.'
+    redirect_to root_path, flash: { notice: 'You are already logged out.' }
   end
 
   private

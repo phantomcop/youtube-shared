@@ -7,6 +7,7 @@ class Authentication
 
   def save
     return false unless valid?
+
     begin
       persist!
       true
@@ -23,6 +24,7 @@ class Authentication
 
     if @user.persisted?
       raise 'Invalid username or password' unless user.authenticate(password)
+
       true
     else
       @user.password = password

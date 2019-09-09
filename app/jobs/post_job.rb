@@ -8,7 +8,9 @@ class PostJob < ApplicationJob
       options = {
         status: :success,
         post: PostsController.render(
-          partial: 'posts/post', locals: { post: post.reload }
+          partial: 'posts/post', locals: { post:
+            PostPresenter.new(post.reload)
+          }
         )
       }
     else

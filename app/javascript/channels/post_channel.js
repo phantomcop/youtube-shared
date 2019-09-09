@@ -15,6 +15,7 @@ consumer.subscriptions.create("PostChannel", {
   },
 
   received(data) {
+    console.log('received')
     if (data.status === 'success') {
       $(elements.postList).prepend(data.post)
     } else {

@@ -4,7 +4,8 @@ module ApplicationHelper
 
     content_tag :div, class: 'message' do
       flash.map do |key, msg|
-        content_tag :p, msg, id: key, class: "flash #{key}".freeze
+        key = 'danger' if key == 'error'
+        content_tag :p, msg, id: key, class: "flash has-text-#{key}".freeze
       end.join.html_safe
     end
   end

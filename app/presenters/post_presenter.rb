@@ -17,11 +17,7 @@ class PostPresenter < ApplicationPresenter
     published_at.strftime("%H:%M %F")
   end
 
-  def voted?(user)
-    votes.exists?(user_id: user.id)
-  end
-
-  def vote_type(user)
-    voted?(user) && votes.where(user_id: user.id).first.kind
+  def voted_type(user)
+    voted_by?(user) && votes.find_by(user_id: user.id).kind
   end
 end

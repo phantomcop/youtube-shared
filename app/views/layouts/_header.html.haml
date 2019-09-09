@@ -1,7 +1,8 @@
 .tabs.is-full-width.c-header-menu
   %h3.title.is-size-3
     = link_to root_path do
-      %i.c-header-menu__home-icon &#9812;
+      %i.c-header-menu__home-icon.icon
+        %img{src: asset_path('home.svg')}
       Funny Movies
   .c-header-menu__authenticate
     - if logged_in?

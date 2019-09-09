@@ -1,3 +1,5 @@
 .container.c-pages__home
   .c-pages__home-posts#js-page__home-posts
     = render @home
+    .c-pages__home-posts-pagination
+      = paginate @home.scope
