@@ -3,8 +3,9 @@ class PostJob < ApplicationJob
 
   def perform(post_id)
     post = Post.find(post_id)
-    information = VideoInformation.new(post_id).call
-    if information
+    information = VideoInformation.new(post_id)
+
+    if information.call
       options = {
         status: :success,
         post: PostsController.render(
