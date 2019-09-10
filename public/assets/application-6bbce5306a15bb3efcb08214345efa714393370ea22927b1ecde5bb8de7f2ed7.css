@@ -1,0 +1,227 @@
+/* line 1, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/_helpers.scss */
+.has-background-color-white {
+  background-color: white;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+/* line 7, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/_helpers.scss */
+.is-align-center {
+  text-align: center;
+}
+
+/* line 11, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/_helpers.scss */
+.button {
+  text-transform: capitalize;
+}
+/* line 3, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/header.scss */
+.c-header-menu__authenticate-logged-in-menu {
+  padding-top: 10px;
+  display: flex;
+}
+/* line 6, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/header.scss */
+.c-header-menu__authenticate-logged-in-menu-title {
+  margin-right: 10px;
+  padding-top: 10px;
+}
+/* line 10, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/header.scss */
+.c-header-menu__authenticate-logged-in-menu a {
+  margin-left: 10px;
+}
+/* line 15, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/header.scss */
+.c-header-menu__authenticate-form {
+  display: flex;
+  margin-top: 10px;
+}
+/* line 18, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/header.scss */
+.c-header-menu__authenticate-form-field {
+  display: flex;
+  padding: 5px;
+}
+/* line 21, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/header.scss */
+.c-header-menu__authenticate-form-field label {
+  margin-right: 7px;
+  font-weight: bold;
+  font-size: 13px;
+}
+/* line 26, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/header.scss */
+.c-header-menu__authenticate-form-field input {
+  border-radius: 5px;
+  padding: 5px;
+}
+/* line 2, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/pages.scss */
+.c-pages__home .c-post__content {
+  max-height: 400px;
+}
+/* line 5, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/pages.scss */
+.c-pages__home .c-post__content-video iframe {
+  min-height: 300px;
+}
+/* line 9, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/pages.scss */
+.c-pages__home .c-post__content-text-description {
+  margin-bottom: 10px;
+}
+/* line 14, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/pages.scss */
+.c-pages__home-posts-pagination {
+  width: 20%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+/* line 1, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/posts.scss */
+.c-posts__new {
+  margin-top: 10%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 7px;
+  border: 1px solid;
+  padding: 10px;
+}
+/* line 9, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/posts.scss */
+.c-posts__new-title {
+  position: relative;
+  top: -20px;
+  background-color: white;
+  width: 30%;
+  margin-left: 10px;
+}
+/* line 16, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/posts.scss */
+.c-posts__new-form {
+  padding: 0 5px;
+}
+/* line 20, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/posts.scss */
+.c-posts__new-form-field .field_with_errors {
+  width: 100%;
+}
+/* line 23, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/posts.scss */
+.c-posts__new-form-field-input {
+  width: 100%;
+}
+/* line 27, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/posts.scss */
+.c-posts__new-form-btn {
+  width: 100%;
+  font-weight: bold;
+}
+
+/* line 36, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/posts.scss */
+.c-post__content-text-information-voted-status {
+  background-color: white;
+}
+/* line 40, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/posts.scss */
+.c-post__content-text-information-actions a {
+  margin-left: 10px;
+}
+/* line 42, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/posts.scss */
+.c-post__content-text-information-actions a:hover {
+  background-color: lightblue;
+}
+/* line 1, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /Users/dthtien/Workspace/youtube_shared/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
