@@ -7,7 +7,7 @@ class PostsController < ApplicationController
     @post.url =  @post.url.split('&')[0]
 
     if @post.save
-      flash[:info] = 'We are getting video information'
+      flash[:success] = 'We are getting video information'
       redirect_back_or(root_path)
     else
       flash[:error] = @post.errors.full_messages.to_sentence

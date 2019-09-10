@@ -4,7 +4,7 @@ class PagesOperations::Home
   def initialize(params)
     @post = Post.new
     @authentication = Authentication.new
-    @scope = Post.includes(votes: :user)
+    @scope = Post.includes(:votes)
                 .where(updated: true)
                 .order(created_at: :desc)
                 .page(params[:page])
