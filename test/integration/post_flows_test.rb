@@ -28,6 +28,7 @@ class PostFlowsTest < ActionDispatch::IntegrationTest
 
   test 'Can post valid youtube url' do
     login('dthtien', '123123')
+    Post.destroy_all
     post '/posts', params: {
       post: {url: 'https://www.youtube.com/watch?v=2nqIAOU34jI&list=RDMMpfVODjDBFxU&index=32'}
     }

@@ -11,8 +11,8 @@ class Authentication
     begin
       persist!
       true
-    rescue => exception
-      errors.add(:base, exception.message)
+    rescue StandardError => e
+      errors.add(:base, e.message)
       false
     end
   end
@@ -24,7 +24,6 @@ class Authentication
 
     if @user.persisted?
       raise 'Invalid username or password' unless user.authenticate(password)
-
       true
     else
       @user.password = password

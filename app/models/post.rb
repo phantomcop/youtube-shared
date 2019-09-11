@@ -1,8 +1,7 @@
 class Post < ApplicationRecord
   YOUTUBE_URL_FORMAT = /\A(https?\:\/\/)?(www\.youtube\.com|youtu\.?be)\/.+\z/.freeze
   belongs_to :user
-  has_many :votes
-  has_many :posts
+  has_many :votes, dependent: :destroy
 
   after_commit :crawling_information, on: :create
 
